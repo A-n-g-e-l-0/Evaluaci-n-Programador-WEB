@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Libretas_tb_empleados.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tb_Empleados">
+    <Key>
+      <PropertyRef Name="IdEmpleado" />
+    </Key>
+    <Property Name="IdEmpleado" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CBEmpleado" Type="varchar" MaxLength="60" />
+    <Property Name="NameComplete" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="IdTienda" Type="int" />
+    <Property Name="E_FechaIngreso" Type="datetime" Nullable="false" />
+    <Property Name="E_FechaNacimiento" Type="datetime" Nullable="false" />
+    <Property Name="E_LNacimiento" Type="nvarchar" MaxLength="45" />
+    <Property Name="E_Cedula" Type="nvarchar" MaxLength="45" />
+    <Property Name="E_Sexo" Type="nvarchar" MaxLength="45" />
+    <Property Name="E_Sucursal" Type="varchar" MaxLength="100" />
+    <Property Name="E_ECivil" Type="nvarchar" MaxLength="45" />
+    <Property Name="E_Email" Type="nvarchar" MaxLength="45" />
+    <Property Name="E_Telefono" Type="nvarchar" MaxLength="45" />
+    <Property Name="E_Direccion" Type="nvarchar(max)" />
+    <Property Name="FAlta" Type="datetime" />
+    <Property Name="E_FBaja" Type="datetime" />
+    <Property Name="E_Avatar" Type="varbinary(max)" />
+  </EntityType>
+  <EntityContainer Name="Libretas_tb_empleadosStoreContainer">
+    <EntitySet Name="tb_Empleados" EntityType="Self.tb_Empleados" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

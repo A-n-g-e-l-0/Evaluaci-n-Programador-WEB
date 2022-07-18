@@ -1,0 +1,33 @@
+{
+    "HistJson":[{
+        "PersonUser":"B",
+        "Msgs":[
+            {
+                "DateTime":"xx/xx/xxxx xx:xx:xx",
+                "Tipo":"In",
+                "Msg":"Hola"
+            },
+            {
+                "DateTime":"xx/xx/xxxx xx:xx:xx",
+                "Tipo":"Out",
+                "Msg":"Mundo"
+            }       
+        ]
+        },
+        {
+            "PersonUser":"C",
+            "Msgs":[
+                {
+                    "DateTime":"xx/xx/xxxx xx:xx:xx",
+                    "Tipo":"Out",
+                    "Msg":"Hola"
+                },
+                {
+                    "DateTime":"xx/xx/xxxx xx:xx:xx",
+                    "Tipo":"Out",
+                    "Msg":"Mundo"
+                }       
+            ]
+        }    
+    ]
+}

@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="LibretasModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="L_User">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="LUser" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Pass" Type="varchar(max)" />
+          <Property Name="TypePersonID" Type="int" />
+          <Property Name="U_E_ID" Type="int" />
+        </EntityType>
+        <EntityType Name="PAGINAS">
+          <Key>
+            <PropertyRef Name="P_ID" />
+          </Key>
+          <Property Name="P_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="P_NAME" Type="varchar" MaxLength="100" />
+          <Property Name="P_CONTROLLER" Type="varchar" MaxLength="100" />
+          <Property Name="P_ACTION" Type="varchar" MaxLength="100" />
+          <Property Name="P_H" Type="int" />
+          <Property Name="P_CHILDOF" Type="int" />
+        </EntityType>
+        <EntityType Name="ROLES">
+          <Key>
+            <PropertyRef Name="R_ID" />
+          </Key>
+          <Property Name="R_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="R_NAME" Type="varchar" MaxLength="100" />
+          <Property Name="R_DESC" Type="varchar" MaxLength="100" />
+          <Property Name="R_H" Type="int" />
+        </EntityType>
+        <EntityType Name="ROLPAGINAS">
+          <Key>
+            <PropertyRef Name="RP_ID" />
+          </Key>
+          <Property Name="RP_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RP_R_ID" Type="int" />
+          <Property Name="RP_P_ID" Type="int" />
+          <Property Name="RP_H" Type="int" />
+        </EntityType>
+        <EntityType Name="T_TCliente">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="tipo" Type="varchar" MaxLength="20" />
+          <Property Name="habilitado" Type="int" />
+        </EntityType>
+        <EntityType Name="tb_Empleados">
+          <Key>
+            <PropertyRef Name="IdEmpleado" />
+          </Key>
+          <Property Name="IdEmpleado" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CBEmpleado" Type="varchar" MaxLength="60" />
+          <Property Name="NameComplete" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="IdTienda" Type="int" />
+          <Property Name="E_FechaIngreso" Type="datetime" Nullable="false" />
+          <Property Name="E_FechaNacimiento" Type="datetime" Nullable="false" />
+          <Property Name="E_LNacimiento" Type="nvarchar" MaxLength="45" />
+          <Property Name="E_Cedula" Type="nvarchar" MaxLength="45" />
+          <Property Name="E_Sexo" Type="nvarchar" MaxLength="45" />
+          <Property Name="E_Sucursal" Type="varchar" MaxLength="100" />
+          <Property Name="E_ECivil" Type="nvarchar" MaxLength="45" />
+          <Property Name="E_Email" Type="nvarchar" MaxLength="45" />
+          <Property Name="E_Telefono" Type="nvarchar" MaxLength="45" />
+          <Property Name="E_Direccion" Type="nvarchar(max)" />
+          <Property Name="FAlta" Type="datetime" />
+          <Property Name="E_FBaja" Type="datetime" />
+          <Property Name="E_Avatar" Type="varbinary(max)" />
+        </EntityType>
+        <Association Name="FK__L_User__TypePers__6BCEF5F8">
+          <End Role="T_TCliente" Type="Self.T_TCliente" Multiplicity="0..1" />
+          <End Role="L_User" Type="Self.L_User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="T_TCliente">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="L_User">
+              <PropertyRef Name="TypePersonID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__L_User__U_E_ID__737017C0">
+          <End Role="tb_Empleados" Type="Self.tb_Empleados" Multiplicity="0..1" />
+          <End Role="L_User" Type="Self.L_User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Empleados">
+              <PropertyRef Name="IdEmpleado" />
+            </Principal>
+            <Dependent Role="L_User">
+              <PropertyRef Name="U_E_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ROLPAGINA__RP_P___049AA3C2">
+          <End Role="PAGINAS" Type="Self.PAGINAS" Multiplicity="0..1" />
+          <End Role="ROLPAGINAS" Type="Self.ROLPAGINAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PAGINAS">
+              <PropertyRef Name="P_ID" />
+            </Principal>
+            <Dependent Role="ROLPAGINAS">
+              <PropertyRef Name="RP_P_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ROLPAGINA__RP_R___03A67F89">
+          <End Role="ROLES" Type="Self.ROLES" Multiplicity="0..1" />
+          <End Role="ROLPAGINAS" Type="Self.ROLPAGINAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ROLES">
+              <PropertyRef Name="R_ID" />
+            </Principal>
+            <Dependent Role="ROLPAGINAS">
+              <PropertyRef Name="RP_R_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="LibretasModelStoreContainer">
+          <EntitySet Name="L_User" EntityType="Self.L_User" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PAGINAS" EntityType="Self.PAGINAS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ROLES" EntityType="Self.ROLES" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ROLPAGINAS" EntityType="Self.ROLPAGINAS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="T_TCliente" EntityType="Self.T_TCliente" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tb_Empleados" EntityType="Self.tb_Empleados" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__L_User__TypePers__6BCEF5F8" Association="Self.FK__L_User__TypePers__6BCEF5F8">
+            <End Role="T_TCliente" EntitySet="T_TCliente" />
+            <End Role="L_User" EntitySet="L_User" />
+          </AssociationSet>
+          <AssociationSet Name="FK__L_User__U_E_ID__737017C0" Association="Self.FK__L_User__U_E_ID__737017C0">
+            <End Role="tb_Empleados" EntitySet="tb_Empleados" />
+            <End Role="L_User" EntitySet="L_User" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ROLPAGINA__RP_P___049AA3C2" Association="Self.FK__ROLPAGINA__RP_P___049AA3C2">
+            <End Role="PAGINAS" EntitySet="PAGINAS" />
+            <End Role="ROLPAGINAS" EntitySet="ROLPAGINAS" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ROLPAGINA__RP_R___03A67F89" Association="Self.FK__ROLPAGINA__RP_R___03A67F89">
+            <End Role="ROLES" EntitySet="ROLES" />
+            <End Role="ROLPAGINAS" EntitySet="ROLPAGINAS" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="LibretasModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="L_User">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="LUser" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Pass" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="TypePersonID" Type="Int32" />
+          <Property Name="U_E_ID" Type="Int32" />
+          <NavigationProperty Name="T_TCliente" Relationship="Self.FK__L_User__TypePers__6BCEF5F8" FromRole="L_User" ToRole="T_TCliente" />
+          <NavigationProperty Name="tb_Empleados" Relationship="LibretasModel.FK__L_User__U_E_ID__737017C0" FromRole="L_User" ToRole="tb_Empleados" />
+        </EntityType>
+        <EntityType Name="PAGINAS">
+          <Key>
+            <PropertyRef Name="P_ID" />
+          </Key>
+          <Property Name="P_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="P_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="P_CONTROLLER" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="P_ACTION" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="P_H" Type="Int32" />
+          <Property Name="P_CHILDOF" Type="Int32" />
+          <NavigationProperty Name="ROLPAGINAS" Relationship="Self.FK__ROLPAGINA__RP_P___049AA3C2" FromRole="PAGINAS" ToRole="ROLPAGINAS" />
+        </EntityType>
+        <EntityType Name="ROLES">
+          <Key>
+            <PropertyRef Name="R_ID" />
+          </Key>
+          <Property Name="R_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="R_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="R_DESC" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="R_H" Type="Int32" />
+          <NavigationProperty Name="ROLPAGINAS" Relationship="Self.FK__ROLPAGINA__RP_R___03A67F89" FromRole="ROLES" ToRole="ROLPAGINAS" />
+        </EntityType>
+        <EntityType Name="ROLPAGINAS">
+          <Key>
+            <PropertyRef Name="RP_ID" />
+          </Key>
+          <Property Name="RP_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RP_R_ID" Type="Int32" />
+          <Property Name="RP_P_ID" Type="Int32" />
+          <Property Name="RP_H" Type="Int32" />
+          <NavigationProperty Name="PAGINAS" Relationship="Self.FK__ROLPAGINA__RP_P___049AA3C2" FromRole="ROLPAGINAS" ToRole="PAGINAS" />
+          <NavigationProperty Name="ROLES" Relationship="Self.FK__ROLPAGINA__RP_R___03A67F89" FromRole="ROLPAGINAS" ToRole="ROLES" />
+        </EntityType>
+        <EntityType Name="T_TCliente">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="tipo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="habilitado" Type="Int32" />
+          <NavigationProperty Name="L_User" Relationship="Self.FK__L_User__TypePers__6BCEF5F8" FromRole="T_TCliente" ToRole="L_User" />
+        </EntityType>
+        <Association Name="FK__L_User__TypePers__6BCEF5F8">
+          <End Role="T_TCliente" Type="Self.T_TCliente" Multiplicity="0..1" />
+          <End Role="L_User" Type="Self.L_User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="T_TCliente">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="L_User">
+              <PropertyRef Name="TypePersonID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ROLPAGINA__RP_P___049AA3C2">
+          <End Role="PAGINAS" Type="Self.PAGINAS" Multiplicity="0..1" />
+          <End Role="ROLPAGINAS" Type="Self.ROLPAGINAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PAGINAS">
+              <PropertyRef Name="P_ID" />
+            </Principal>
+            <Dependent Role="ROLPAGINAS">
+              <PropertyRef Name="RP_P_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ROLPAGINA__RP_R___03A67F89">
+          <End Role="ROLES" Type="Self.ROLES" Multiplicity="0..1" />
+          <End Role="ROLPAGINAS" Type="Self.ROLPAGINAS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ROLES">
+              <PropertyRef Name="R_ID" />
+            </Principal>
+            <Dependent Role="ROLPAGINAS">
+              <PropertyRef Name="RP_R_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="L_User" EntityType="Self.L_User" />
+          <EntitySet Name="PAGINAS" EntityType="Self.PAGINAS" />
+          <EntitySet Name="ROLES" EntityType="Self.ROLES" />
+          <EntitySet Name="ROLPAGINAS" EntityType="Self.ROLPAGINAS" />
+          <EntitySet Name="T_TCliente" EntityType="Self.T_TCliente" />
+          <AssociationSet Name="FK__L_User__TypePers__6BCEF5F8" Association="Self.FK__L_User__TypePers__6BCEF5F8">
+            <End Role="T_TCliente" EntitySet="T_TCliente" />
+            <End Role="L_User" EntitySet="L_User" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ROLPAGINA__RP_P___049AA3C2" Association="Self.FK__ROLPAGINA__RP_P___049AA3C2">
+            <End Role="PAGINAS" EntitySet="PAGINAS" />
+            <End Role="ROLPAGINAS" EntitySet="ROLPAGINAS" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ROLPAGINA__RP_R___03A67F89" Association="Self.FK__ROLPAGINA__RP_R___03A67F89">
+            <End Role="ROLES" EntitySet="ROLES" />
+            <End Role="ROLPAGINAS" EntitySet="ROLPAGINAS" />
+          </AssociationSet>
+          <EntitySet Name="tb_Empleados" EntityType="LibretasModel.tb_Empleados" />
+          <AssociationSet Name="FK__L_User__U_E_ID__737017C0" Association="LibretasModel.FK__L_User__U_E_ID__737017C0">
+            <End Role="tb_Empleados" EntitySet="tb_Empleados" />
+            <End Role="L_User" EntitySet="L_User" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="tb_Empleados">
+          <Key>
+            <PropertyRef Name="IdEmpleado" />
+          </Key>
+          <Property Name="IdEmpleado" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CBEmpleado" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Name="NameComplete" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="IdTienda" Type="Int32" />
+          <Property Name="E_FechaIngreso" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="E_FechaNacimiento" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="E_LNacimiento" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+          <Property Name="E_Cedula" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+          <Property Name="E_Sexo" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+          <Property Name="E_Sucursal" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="E_ECivil" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+          <Property Name="E_Email" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+          <Property Name="E_Telefono" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+          <Property Name="E_Direccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="FAlta" Type="DateTime" Precision="3" />
+          <Property Name="E_FBaja" Type="DateTime" Precision="3" />
+          <Property Name="E_Avatar" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <NavigationProperty Name="L_User" Relationship="LibretasModel.FK__L_User__U_E_ID__737017C0" FromRole="tb_Empleados" ToRole="L_User" />
+        </EntityType>
+        <Association Name="FK__L_User__U_E_ID__737017C0">
+          <End Type="LibretasModel.tb_Empleados" Role="tb_Empleados" Multiplicity="0..1" />
+          <End Type="LibretasModel.L_User" Role="L_User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_Empleados">
+              <PropertyRef Name="IdEmpleado" />
+            </Principal>
+            <Dependent Role="L_User">
+              <PropertyRef Name="U_E_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="LibretasModelStoreContainer" CdmEntityContainer="Entities">
+          <EntitySetMapping Name="L_User">
+            <EntityTypeMapping TypeName="LibretasModel.L_User">
+              <MappingFragment StoreEntitySet="L_User">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="LUser" ColumnName="LUser" />
+                <ScalarProperty Name="Pass" ColumnName="Pass" />
+                <ScalarProperty Name="TypePersonID" ColumnName="TypePersonID" />
+                <ScalarProperty Name="U_E_ID" ColumnName="U_E_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PAGINAS">
+            <EntityTypeMapping TypeName="LibretasModel.PAGINAS">
+              <MappingFragment StoreEntitySet="PAGINAS">
+                <ScalarProperty Name="P_ID" ColumnName="P_ID" />
+                <ScalarProperty Name="P_NAME" ColumnName="P_NAME" />
+                <ScalarProperty Name="P_CONTROLLER" ColumnName="P_CONTROLLER" />
+                <ScalarProperty Name="P_ACTION" ColumnName="P_ACTION" />
+                <ScalarProperty Name="P_H" ColumnName="P_H" />
+                <ScalarProperty Name="P_CHILDOF" ColumnName="P_CHILDOF" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ROLES">
+            <EntityTypeMapping TypeName="LibretasModel.ROLES">
+              <MappingFragment StoreEntitySet="ROLES">
+                <ScalarProperty Name="R_ID" ColumnName="R_ID" />
+                <ScalarProperty Name="R_NAME" ColumnName="R_NAME" />
+                <ScalarProperty Name="R_DESC" ColumnName="R_DESC" />
+                <ScalarProperty Name="R_H" ColumnName="R_H" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ROLPAGINAS">
+            <EntityTypeMapping TypeName="LibretasModel.ROLPAGINAS">
+              <MappingFragment StoreEntitySet="ROLPAGINAS">
+                <ScalarProperty Name="RP_ID" ColumnName="RP_ID" />
+                <ScalarProperty Name="RP_R_ID" ColumnName="RP_R_ID" />
+                <ScalarProperty Name="RP_P_ID" ColumnName="RP_P_ID" />
+                <ScalarProperty Name="RP_H" ColumnName="RP_H" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_TCliente">
+            <EntityTypeMapping TypeName="LibretasModel.T_TCliente">
+              <MappingFragment StoreEntitySet="T_TCliente">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="tipo" ColumnName="tipo" />
+                <ScalarProperty Name="habilitado" ColumnName="habilitado" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tb_Empleados">
+            <EntityTypeMapping TypeName="LibretasModel.tb_Empleados">
+              <MappingFragment StoreEntitySet="tb_Empleados">
+                <ScalarProperty Name="E_Avatar" ColumnName="E_Avatar" />
+                <ScalarProperty Name="E_FBaja" ColumnName="E_FBaja" />
+                <ScalarProperty Name="FAlta" ColumnName="FAlta" />
+                <ScalarProperty Name="E_Direccion" ColumnName="E_Direccion" />
+                <ScalarProperty Name="E_Telefono" ColumnName="E_Telefono" />
+                <ScalarProperty Name="E_Email" ColumnName="E_Email" />
+                <ScalarProperty Name="E_ECivil" ColumnName="E_ECivil" />
+                <ScalarProperty Name="E_Sucursal" ColumnName="E_Sucursal" />
+                <ScalarProperty Name="E_Sexo" ColumnName="E_Sexo" />
+                <ScalarProperty Name="E_Cedula" ColumnName="E_Cedula" />
+                <ScalarProperty Name="E_LNacimiento" ColumnName="E_LNacimiento" />
+                <ScalarProperty Name="E_FechaNacimiento" ColumnName="E_FechaNacimiento" />
+                <ScalarProperty Name="E_FechaIngreso" ColumnName="E_FechaIngreso" />
+                <ScalarProperty Name="IdTienda" ColumnName="IdTienda" />
+                <ScalarProperty Name="NameComplete" ColumnName="NameComplete" />
+                <ScalarProperty Name="CBEmpleado" ColumnName="CBEmpleado" />
+                <ScalarProperty Name="IdEmpleado" ColumnName="IdEmpleado" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

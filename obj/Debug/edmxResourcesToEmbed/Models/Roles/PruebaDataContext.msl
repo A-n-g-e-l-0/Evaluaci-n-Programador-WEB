@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LibretasModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="L_User">
+      <EntityTypeMapping TypeName="LibretasModel.L_User">
+        <MappingFragment StoreEntitySet="L_User">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="LUser" ColumnName="LUser" />
+          <ScalarProperty Name="Pass" ColumnName="Pass" />
+          <ScalarProperty Name="TypePersonID" ColumnName="TypePersonID" />
+          <ScalarProperty Name="U_E_ID" ColumnName="U_E_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PAGINAS">
+      <EntityTypeMapping TypeName="LibretasModel.PAGINAS">
+        <MappingFragment StoreEntitySet="PAGINAS">
+          <ScalarProperty Name="P_ID" ColumnName="P_ID" />
+          <ScalarProperty Name="P_NAME" ColumnName="P_NAME" />
+          <ScalarProperty Name="P_CONTROLLER" ColumnName="P_CONTROLLER" />
+          <ScalarProperty Name="P_ACTION" ColumnName="P_ACTION" />
+          <ScalarProperty Name="P_H" ColumnName="P_H" />
+          <ScalarProperty Name="P_CHILDOF" ColumnName="P_CHILDOF" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ROLES">
+      <EntityTypeMapping TypeName="LibretasModel.ROLES">
+        <MappingFragment StoreEntitySet="ROLES">
+          <ScalarProperty Name="R_ID" ColumnName="R_ID" />
+          <ScalarProperty Name="R_NAME" ColumnName="R_NAME" />
+          <ScalarProperty Name="R_DESC" ColumnName="R_DESC" />
+          <ScalarProperty Name="R_H" ColumnName="R_H" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ROLPAGINAS">
+      <EntityTypeMapping TypeName="LibretasModel.ROLPAGINAS">
+        <MappingFragment StoreEntitySet="ROLPAGINAS">
+          <ScalarProperty Name="RP_ID" ColumnName="RP_ID" />
+          <ScalarProperty Name="RP_R_ID" ColumnName="RP_R_ID" />
+          <ScalarProperty Name="RP_P_ID" ColumnName="RP_P_ID" />
+          <ScalarProperty Name="RP_H" ColumnName="RP_H" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_TCliente">
+      <EntityTypeMapping TypeName="LibretasModel.T_TCliente">
+        <MappingFragment StoreEntitySet="T_TCliente">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="tipo" ColumnName="tipo" />
+          <ScalarProperty Name="habilitado" ColumnName="habilitado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_Empleados">
+      <EntityTypeMapping TypeName="LibretasModel.tb_Empleados">
+        <MappingFragment StoreEntitySet="tb_Empleados">
+          <ScalarProperty Name="E_Avatar" ColumnName="E_Avatar" />
+          <ScalarProperty Name="E_FBaja" ColumnName="E_FBaja" />
+          <ScalarProperty Name="FAlta" ColumnName="FAlta" />
+          <ScalarProperty Name="E_Direccion" ColumnName="E_Direccion" />
+          <ScalarProperty Name="E_Telefono" ColumnName="E_Telefono" />
+          <ScalarProperty Name="E_Email" ColumnName="E_Email" />
+          <ScalarProperty Name="E_ECivil" ColumnName="E_ECivil" />
+          <ScalarProperty Name="E_Sucursal" ColumnName="E_Sucursal" />
+          <ScalarProperty Name="E_Sexo" ColumnName="E_Sexo" />
+          <ScalarProperty Name="E_Cedula" ColumnName="E_Cedula" />
+          <ScalarProperty Name="E_LNacimiento" ColumnName="E_LNacimiento" />
+          <ScalarProperty Name="E_FechaNacimiento" ColumnName="E_FechaNacimiento" />
+          <ScalarProperty Name="E_FechaIngreso" ColumnName="E_FechaIngreso" />
+          <ScalarProperty Name="IdTienda" ColumnName="IdTienda" />
+          <ScalarProperty Name="NameComplete" ColumnName="NameComplete" />
+          <ScalarProperty Name="CBEmpleado" ColumnName="CBEmpleado" />
+          <ScalarProperty Name="IdEmpleado" ColumnName="IdEmpleado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

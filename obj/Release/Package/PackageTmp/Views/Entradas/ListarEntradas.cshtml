@@ -1,0 +1,194 @@
+﻿@model IEnumerable<SISTEMA.Models.Entradas.EntradasModel>
+
+
+@{
+    ViewBag.Title = "ListarEntradas";
+}
+
+
+
+@Styles.Render("~/bundles/css/paguinado")
+@Scripts.Render("~/bundles/js/paguinado")
+
+@* Render the custom bundles *@
+@Scripts.Render("~/bundles/js/Entradas")
+
+@*Switch ID O CREDENCIAL*@
+@Styles.Render("~/bundles/css/requerido")
+
+
+<!-- /.container-fluid -->
+<!-- comienza el codigo de cards-->
+<div class="row row-cols-1 row-cols-md-3">
+    <div class="card">
+        <div class="card-header">
+            Entradas y Salidas
+            <!-- Credencial o ID empleado -->
+
+
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <label>Codigo de Barras < - > ID Empleado</label><br />
+                <label class="switch">
+                    <input type="checkbox" id="chkboxActiveBaja" />
+                    <span class="slider round"></span>
+                </label>
+                <hr class="sidebar-divider my-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="0" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        Entradas
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="1">
+                    <label class="form-check-label" for="exampleRadios2">
+                        Salidas
+                    </label>
+                </div>
+
+
+                <hr class="sidebar-divider my-3">
+                <input class="form-control form-control-lg obligatorio" type="text" id="txtCBCheckIn"
+                       placeholder="|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||">
+
+            </div>
+            <div class="card-footer">
+
+                <button class="btn btn-primary"
+                        onclick="Action_Empleado(0)">
+                    <i class="fas fa-calendar-check"></i>    Registrar Hora.
+                </button>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-8">
+        
+                    <div id="dataTableEmpleadosChecan">
+
+                    </div>
+               
+              
+    </div>
+   
+
+    @*<div class="col mb-3">
+                <div class="card">
+                    <h5 class="card-header">Jose Manuel</h5>
+                    <div class="card">
+                        <img src="~/Content/img/JoseJOs.jpeg" class="card-img-top" alt="" />
+                        <div class="card-body">
+                            <h5 class="card-title">Auxiliar de Ventas</h5>
+                            <p class="card-text">Entrada:</p>
+                            <p class="card-text">Salida:</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">Más Información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-3">
+                <div class="card">
+                    <div class="card-header">JAQUELINE SANTOS AGUILAR</div>
+                    <div class="card">
+                        <img src="~/Content/img/SILVERIOS.jpeg" class="card-img-top" alt="" />
+                        <div class="card-body">
+                            <h5 class="card-title">Encargada de Tienda</h5>
+                            <p class="card-text">Entrada:</p>
+                            <p class="card-text">Salida:</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">Más Información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-3">
+                <div class="card">
+                    <div class="card-header">MARCO ANTONIO VARGAS LIRA</div>
+                    <div class="card">
+                        <img src="~/Content/img/WhatsApp Image 2018-12-08 at 12.45.33 PM.jpeg" class="card-img-top" alt="" />
+                        <div class="card-body">
+                            <h5 class="card-title">Igulador Profesional</h5>
+                            <p class="card-text">Entrada:</p>
+                            <p class="card-text">Salida:</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">Más Información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <br />
+        <div class="row row-cols-1 row-cols-md-4">
+            <div class="col mb-2">
+                <div class="card">
+                    <div class="card-header">NANCY GUARDADO</div>
+                    <div class="card">
+                        <img src="~/Content/img/WhatsApp Image 2020-08-10 at 9.51.41 AM.jpeg" class="card-img-top" alt="" />
+                        <div class="card-body">
+                            <h5 class="card-title">Administradora</h5>
+                            <p class="card-text">Entrada:</p>
+                            <p class="card-text">Salida:</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">Más Información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-2">
+                <div class="card">
+                    <div class="card-header">GERARDO JAIR </div>
+                    <div class="card">
+                        <img src="~/Content/img/WhatsApp Image 2020-08-08 at 1.53.38 PM.jpeg" class="card-img-top" alt="" />
+                        <div class="card-body">
+                            <h5 class="card-title">Repartidor</h5>
+                            <p class="card-text">Entrada:</p>
+                            <p class="card-text">Salida:</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">Más Información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-2">
+                <div class="card">
+                    <div class="card-header">NANCY GUARDADO</div>
+                    <div class="card">
+                        <img src="~/Content/img/WhatsApp Image 2020-08-10 at 9.51.41 AM.jpeg" class="card-img-top" alt="" />
+                        <div class="card-body">
+                            <h5 class="card-title">Administradora</h5>
+                            <p class="card-text">Entrada:</p>
+                            <p class="card-text">Salida:</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">Más Información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-2">
+                <div class="card">
+                    <div class="card-header">GERARDO JAIR </div>
+                    <div class="card">
+                        <img src="~/Content/img/WhatsApp Image 2020-08-08 at 1.53.38 PM.jpeg" class="card-img-top" alt="" />
+                        <div class="card-body">
+                            <h5 class="card-title">Repartidor</h5>
+                            <p class="card-text">Entrada:</p>
+                            <p class="card-text">Salida:</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">Más Información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>*@
+</div>

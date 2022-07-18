@@ -1,0 +1,337 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+@Scripts.Render("~/bundles/js")
+
+
+
+@Scripts.Render("~/bundles/js/LoadUser")
+
+@Styles.Render("~/bundles/css/paguinado")
+@Scripts.Render("~/bundles/js/paguinado")
+
+
+@Styles.Render("~/bundles/css")
+
+@*Required Propio*@
+@Styles.Render("~/bundles/css/requerido")
+@Scripts.Render("~/bundles/js/LlenaCombos")
+
+<div class="col-lg-12" style="border-top:1PX solid #d4d0d0">
+    <br />
+</div>
+<!--CODIGOS rex barras DESCR CHECKS -->
+<div class="row">
+    <!--<div class="col-lg-3">
+        <div class="form-group">
+            <label> CODIGO DE BARRA</label>-->
+            @* <asp:TextBox runat="server" CssClass="form-control" placeholder="Ingrese Codigo de Barras..." ID="txtCBarras"> </asp:TextBox>*@
+            <!--<div>  <input type="number" class="form-control autoclean obligatorio" id="txtCBarras" placeholder="Ingrese Codigo de Barras" required> </div>
+        </div>
+
+    </div>-->
+
+    <div class="col-lg-3">
+        <div class="form-group">
+            <label>CLAVE</label>
+            @*<asp:TextBox runat="server" CssClass="form-control" placeholder="Ingrese Codigo REX..." ID="txtRex"> </asp:TextBox>*@
+            <div>
+                <input type="text" class="form-control autoclean obligatorio" id="txtRex" placeholder="Clave" required>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3">
+        <div class="form-group">
+            @*<asp:CheckBox runat="server" ID="chkServices" Checked="false" class="form-check-input" />*@
+            <input class='checkbox' type='checkbox' id='chkServices' />
+            <label class="form-check-label" for="chkServices">SERVICIO</label>
+
+            @*<asp:CheckBox runat="server" ID="chkInsumo" Checked="false" class="form-check-input" />
+                <label class="form-check-label" for="chkInsumo">INSUMO</label>
+                <asp:CheckBox runat="server" ID="chkUse" Checked="false" class="form-check-input" />
+                <label class="form-check-label" for="chkUse">USO</label>*@
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-12">
+            <img class="img-profile" width="80" height="100" style="border:1px solid" id="imgFoto" />
+
+        </div>
+        <div class="col-sm-12">
+
+            <input type="file" value="..." id="btnFoto" onchange="previewImg(this)" />
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-8">
+        <div class="form-group">
+            <label>DESCRIPCIÓN</label>
+            @*<asp:TextBox runat="server" CssClass="form-control" placeholder="Ingrese Descripcion..." ID="txtDescrpcion"> </asp:TextBox>*@
+            <div>
+                <input type="text" class="form-control autoclean obligatorio" id="txtDescrpcion" placeholder="Ingrese Descripción..." required>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="form-group">
+            <label>EXISTENCIAS</label>
+            @*<asp:TextBox runat="server" CssClass="form-control" placeholder="Ingrese Descripcion..." ID="txtDescrpcion"> </asp:TextBox>*@
+            <div>
+                <input type="number" class="form-control autoclean obligatorio" id="txtExistencias" placeholder="0" required>
+            </div>
+        </div>
+    </div>
+</div>
+<!--ENFD  CODIGOS rex barras DESCR CHECKS -->
+<div class="col-lg-12" style="border-top:1PX solid #d4d0d0">
+    <br />
+</div>
+
+
+
+<div class="row">
+
+
+    <div class="col-lg-3">
+        <label>MARCA</label>
+        <div class="form-group input-group">
+            @* <asp:DropDownList runat="server" ID="ddlMarcas" CssClass="form-control" EnableViewState="true"> </asp:DropDownList>*@
+            <select class="custom-select" id="ddlMarcas">
+            </select>
+            <span class="input-group-btn">
+                <a class="btn btn-info" data-toggle="modal" href="#myModalMarc">Agregar</a>
+            </span>
+
+            <div id="myModalMarc" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+
+                            <h5 class="modal-title" id="exampleModalLabel">NUEVA MARCA</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            @*<asp:TextBox runat="server" ID="txtMarca" CssClass="form-control" placeholder="Ingrese Nueva Marca..."></asp:TextBox>*@
+                            <div> <input type="text" class="form-control autoclean obligatorioMarca" id="txtMarca" placeholder="Marca" required></div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal" id="btnCancelMarcas">CERRAR</button>
+                            <div><button onclick="btnAddMarca_Click()" type="button" class="btn btn-primary">GUARDAR</button></div>
+                            @*<asp:Button runat="server" CssClass="btn btn-success" Text="Guardar" OnClick="btnAddMarca_Click" />*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="col-lg-3">
+        <label>UNIDAD</label>
+        <div class="form-group input-group">
+            @*<asp:DropDownList runat="server" ID="ddlUnidades" CssClass="form-control" EnableViewState="true"> </asp:DropDownList>*@
+            <select class="custom-select" id="ddlUnidades">
+            </select>
+            <span class="input-group-btn">
+                <a class="btn btn-info" data-toggle="modal" href="#myModalUni">Agregar</a>
+            </span>
+
+
+            <div id="myModalUni" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">NUEVA UNIDAD</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+
+                            @*<asp:TextBox runat="server" ID="txtUnidad" CssClass="form-control" placeholder="Ingrese Nueva Unidad Medida..."></asp:TextBox><br /><br /><br />*@
+                            <div> <input type="text" class="form-control autoclean obligatorioUnidad" id="txtUnidad" placeholder="Unidad" required></div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal" id="btnCancelUnit">CERRAR</button>
+                            <div><button onclick="btnAddUnidad_Click()" type="button" class="btn btn-primary">GUARDAR</button></div>
+                            @*<asp:Button runat="server" CssClass="btn btn-success" Text="Guardar" OnClick="btnAddUnidad_Click" />*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-lg-3">
+        <label>CATEGORIAS</label>
+        <div class="form-group input-group">
+            <!-- Drpdownlist CategoriasCategorias-->
+            @* <asp:DropDownList runat="server" ID="ddlCategorias" CssClass="form-control" EnableViewState="true"> </asp:DropDownList>*@
+
+            <select class="custom-select" id="ddlCategorias">
+            </select>
+
+            <span class="input-group-btn">
+                <!-- Botones ADD DEL-->
+                <a class="btn btn-info" data-toggle="modal" href="#myModalCat">Agregar</a>
+
+            </span>
+        </div>
+        <!--TAB Agrega Categorias-->
+        <div id="myModalCat" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">NUEVA CATEGORIA</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        @*<asp:TextBox runat="server" ID="txtFindCategos" CssClass="form-control" placeholder="Buscar..."></asp:TextBox><br />*@
+                        <div>
+                            <input type="text" class="form-control autoclean obligatorioCategoria" id="txtFindCategos" placeholder="Categoria">
+                        </div>
+
+
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" id="btnCancelCategorias">CERRAR</button>
+                        <div><button onclick="btnAddCategoria_Click()" type="button" class="btn btn-primary">GUARDAR</button></div>
+                        @*<asp:Button runat="server" CssClass="btn btn-success" Text="Guardar" OnClick="btnAddCategoria_Click" />*@
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--//End Agrega Categorias-->
+
+
+
+    <div class="col-lg-3">
+        <label> PROVEEDOR </label>
+        <div class="form-group input-group">
+            <!-- Cargar Proveedores-->
+
+            <select class="custom-select" id="ddlProveedor">
+            </select>
+
+            <span class="input-group-btn">
+                <a class="btn btn-info" data-toggle="modal" href="#myModal">Agregar</a>
+            </span>
+
+            <div id="myModal" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">AGREGAR PROVEEDOR</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>NUEVO PROVEEDOR</p>
+                            <label>PROVEEDOR</label>
+                            @*<asp:TextBox runat="server" ID="txtNombreProveedor" CssClass="form-control" placeholder="Ingrese Nuevo Proveedor..."></asp:TextBox><br /><%--//Nombre proveedor ==== razon social--%>*@
+                        <div> <input type="text" class="form-control autoclean obligatorioProveedor" id="txtNombreProveedor" placeholder="Proveedor" required></div> <br />
+                            <label>CONTACTO (Nombre de quien atiende, dueño, etc..)</label>
+                            @*<asp:TextBox runat="server" ID="tB_Curp" CssClass="form-control" placeholder="Ingrese Nombre del Contacto..."></asp:TextBox>*@
+                            <input type="text" class="form-control autoclean" id="tB_Contact" placeholder="Contacto" required><br />
+                            <label>TELEFONOS</label>
+                            @*<asp:TextBox runat="server" ID="tB_Tel" CssClass="form-control" placeholder="Ingrese Telefonos..."></asp:TextBox>*@
+                            <input type="text" class="form-control autoclean" id="tB_Tel" placeholder="Telefono" required><br />
+                            <label>CORREOS ELECTRONICOS</label>
+                            @*<asp:TextBox runat="server" ID="tB_Email" CssClass="form-control" placeholder="Ingrese E-Mail..."></asp:TextBox>*@
+                            <input type="text" class="form-control autoclean" id="tB_Email" placeholder="Correos" required><br />
+                            <label>DIRECCIÓN COMPLETA</label>
+                            @*<asp:TextBox runat="server" ID="tB_Calle" CssClass="form-control" placeholder="Ingrese Dirección..." TextMode="MultiLine" Columns="3" Rows="4"></asp:TextBox>*@
+                            <input type="text" class="form-control autoclean" id="tB_Direccion" placeholder="Dirección" required>
+                        </div>
+
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal" id="btnCancelProveedor">CERRAR</button>
+                            @*<asp:Button runat="server" CssClass="btn btn-success" Text="Guardar" OnClick="btnAddProveedor_Click" />*@
+                            <div><button onclick="btnAddProveedor_Click()" type="button" class="btn btn-light">GUARDAR</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+</div>
+
+
+<div class="col-lg-12" style="border-top:1PX solid #d4d0d0">
+    <br />
+</div>
+
+
+
+
+<!--pTRECIOS COMPRA -->
+<div class="row">
+    <div class="col-lg-3">
+        <label>PRECIO  COMPRA</label>
+        <div class="form-group input-group">
+            <span class="input-group-addon">$</span>
+            @*<asp:TextBox runat="server" CssClass="form-control" placeholder="0.00..." ID="txtPCostosIva" onblur="AumentarIVA(this);"> </asp:TextBox>*@
+            <div>
+                <input type="number" class="form-control autoclean" id="txtPrecioCompra" placeholder="0.00" required>
+            </div>
+        </div>
+    </div>
+
+    <!--pTRECIOS vENTA -->
+
+    <div class="col-lg-3">
+        <label>PRECIO VENTA</label>
+        <div class="form-group input-group">
+            <span class="input-group-addon">$</span>
+            @*<asp:TextBox runat="server" CssClass="form-control" placeholder="0.00" ID="txtPVsIva" onblur="CalcularGNsinIVA(this);"> </asp:TextBox>*@
+            <div><input type="number" class="form-control autoclean obligatorio" id="txtPrecioVenta" placeholder="0.00" required> </div>
+        </div>
+    </div>
+
+
+    <!--GANNACIASA -->
+
+    <div class="col-lg-3">
+        <label class="h6">MARGEN DE GANANCIA</label>
+        <div class="form-group input-group">
+            @*<asp:TextBox runat="server" CssClass="form-control" placeholder="0.00" ID="txtMargenPorcSiva"> </asp:TextBox>*@
+            <div>
+                <input type="number" class="form-control autoclean" id="txtMargenGanancia" placeholder="0.00" required>
+            </div>
+            <span class="input-group-addon">%</span>
+        </div>
+    </div>
+
+</div>
+
+<!-- Botones Guardar Limpiar Cancelar-->
+<p class="col-lg-offset-8">
+    @*<input runat="server" CssClass="btn btn-lg btn-success" Text="Guardar" OnClick="btnAddProducto_onClick" />*@
+    <button onclick="Validar()" type="button" class="btn btn-primary">GUARDAR</button>
+    @*<asp:Button runat="server" CssClass="btn btn-lg btn-primary" Text="Limpiar" OnClick="btnLimpiaTxt_onClick" />*@
+    @*<asp:Button runat="server" CssClass="btn btn-lg btn-default" Text="Cancelar" />*@
+</p>
+

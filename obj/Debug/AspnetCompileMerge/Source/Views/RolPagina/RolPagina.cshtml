@@ -1,0 +1,84 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+@Scripts.Render("~/bundles/js")
+@Scripts.Render("~/bundles/js/LoadUser")
+
+@Styles.Render("~/bundles/css")
+
+@* Render the custom bundles *@
+@Scripts.Render("~/bundles/js/RolPaginas")
+
+
+@Styles.Render("~/bundles/css/paguinado")
+@Scripts.Render("~/bundles/js/paguinado")
+
+
+
+
+<h2> Roles Paginas</h2>
+
+
+<hr class="sidebar-divider my-5">
+
+<button type="button" onclick="abrirModal(0)" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Agregar</button>
+
+
+
+<hr class="sidebar-divider my-5">
+
+<div id="tabla">
+
+</div>
+
+
+
+<!-- Modal -->
+<div id="myModal" class="modal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <h5 class="modal-title">Roles</h5>
+            </div>
+            <div class="modal-body">
+
+                <table class="table">
+                    <tr>
+                        <td>Id Rol</td>
+                        <td><input class="borrar" type="text" id="txtIdRol" readonly /></td>
+                    </tr>
+                    <tr>
+                        <td>Nombre Rol</td>
+                        <td><input class="borrar obligatorio" type="text" id="txtNombreRol" /></td>
+                    </tr>
+                    <tr>
+                        <td>Descripcion</td>
+                        <td><input class="borrar obligatorio" type="text" id="txtDescripcion" /></td>
+                    </tr>
+
+                </table>
+
+
+                <hr class="sidebar-divider my-5">
+
+                <table id="tblPagina" class="">
+                </table>
+
+
+
+            </div>
+            <div class="modal-footer">
+                <button onclick="Agregar()" type="button" class="btn btn-success">Aceptar</button>
+
+                <button id="btnCancelar" type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+

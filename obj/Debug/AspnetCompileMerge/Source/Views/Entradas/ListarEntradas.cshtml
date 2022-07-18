@@ -1,0 +1,90 @@
+﻿
+
+@{
+    ViewBag.Title = "ListarEntradas";
+}
+
+
+@Scripts.Render("~/bundles/js")
+@Scripts.Render("~/bundles/js/LoadUser")
+
+@Styles.Render("~/bundles/css")
+
+@Styles.Render("~/bundles/css/paguinado")
+@Scripts.Render("~/bundles/js/paguinado")
+
+@* Render the custom bundles *@
+@Scripts.Render("~/bundles/js/Entradas")
+
+@*Switch ID O CREDENCIAL*@
+@Styles.Render("~/bundles/css/requerido")
+
+@* Global para Graficas*@
+@Scripts.Render("~/bundles/js/Chart")
+@*Charts*@
+@Scripts.Render("~/bundles/js/MyChart")
+
+<!-- /.container-fluid -->
+<!-- comienza el codigo de cards-->
+
+<div class="card col-4">
+    <div class="card-header">
+        Entradas y Salidas
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <form onkeydown="return event.key != 'Enter';">
+
+                <hr class="sidebar-divider my-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="0" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        Entradas
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="1">
+                    <label class="form-check-label" for="exampleRadios2">
+                        Salidas
+                    </label>
+                </div>
+
+
+                <hr class="sidebar-divider my-3">
+                <input class="form-control form-control-lg obligatorio" type="password" name="password" autocomplete="off" id="txtCBCheckIn"
+                       placeholder=""
+                       onkeyup="Action_Empleado(event)">
+
+            </form>
+
+        </div>
+
+    </div>
+</div>
+<br />
+
+<!-- Area Chart -->
+<div class="card col-12">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Registros</h6>
+
+    </div>
+    <div class="card-body">
+        <div id="dataTableReporte" >
+
+        </div>
+    </div>
+
+    <div class="card-footer">
+        @using (Html.BeginForm("btnRegistrosBajar_Click", "Entradas", FormMethod.Get))
+        {
+            <div class="copyright">
+                <code>
+                    <input type="submit" class="btn btn-primary" value="Reporte" />
+                </code>.
+                <br />
+                * SR  Sin Registro
+            </div>
+        }
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="96843482d1b34dd08d044d6e5cca2526" Name="Diagram1">
+        <EntityTypeShape EntityType="Libretas_tb_empleados.tb_Empleados" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Libretas_tb_empleados.tb_Checador_Entradas" Width="1.5" PointX="3" PointY="2.5" IsExpanded="true" />
+        <AssociationConnector Association="Libretas_tb_empleados.fk_CheckIn_Empleado" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="Libretas_tb_empleados.T_Tiendas" Width="1.5" PointX="0.75" PointY="7.5" />
+        <AssociationConnector Association="Libretas_tb_empleados.fk_Empleados_Tienda" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

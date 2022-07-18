@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "CargaClientes";
+}
+@Scripts.Render("~/bundles/js")
+@Scripts.Render("~/bundles/js/LoadUser")
+@Scripts.Render("~/bundles/js/ClientesCredito")
+
+@Styles.Render("~/bundles/css/paguinado")
+@Scripts.Render("~/bundles/js/paguinado")
+
+
+@Styles.Render("~/bundles/css")
+
+
+<h2>Clientes</h2>
+
+
+<div class="row" id="dataTableClientesCredito">
+
+</div>
+
+<!-- Modal Empleados-->
+<div class="modal fade" id="ModalClienteInfo" >
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Información del Cliente</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+              
+            </div>
+            <div class="modal-footer">
+                <button onclick="Validar()" type="button" class="btn btn-primary">Aceptar</button>
+                <button id="btnCancel" type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--END Modal Empleados-->

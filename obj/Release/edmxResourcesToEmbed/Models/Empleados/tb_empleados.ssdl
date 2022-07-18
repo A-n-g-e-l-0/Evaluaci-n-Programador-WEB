@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Libretas_tb_empleados.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="T_Tiendas">
+    <Key>
+      <PropertyRef Name="ID_Tienda" />
+    </Key>
+    <Property Name="ID_Tienda" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="100" />
+    <Property Name="T_ACTIVE" Type="int" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'Libretas.dbo.tb_Checador_Entradas' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="tb_Checador_Entradas">
+    <Key>
+      <PropertyRef Name="IdRegistroEntrada" />
+    </Key>
+    <Property Name="IdRegistroEntrada" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdEmpleado" Type="int" />
+    <Property Name="Registro" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tb_Empleados">
+    <Key>
+      <PropertyRef Name="IdEmpleado" />
+    </Key>
+    <Property Name="IdEmpleado" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CBEmpleado" Type="varchar" MaxLength="60" />
+    <Property Name="NameComplete" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="IdTienda" Type="int" />
+    <Property Name="Puesto" Type="varchar" MaxLength="40" />
+    <Property Name="E_FechaIngreso" Type="datetime" Nullable="false" />
+    <Property Name="E_FechaNacimiento" Type="datetime" Nullable="false" />
+    <Property Name="E_LNacimiento" Type="nvarchar" MaxLength="45" />
+    <Property Name="E_Cedula" Type="nvarchar" MaxLength="45" />
+    <Property Name="E_Sexo" Type="nvarchar" MaxLength="45" />
+    <Property Name="E_Sucursal" Type="varchar" MaxLength="100" />
+    <Property Name="E_ECivil" Type="nvarchar" MaxLength="45" />
+    <Property Name="E_Email" Type="nvarchar" MaxLength="45" />
+    <Property Name="E_Telefono" Type="nvarchar" MaxLength="45" />
+    <Property Name="E_Direccion" Type="nvarchar(max)" />
+    <Property Name="FAlta" Type="datetime" />
+    <Property Name="E_FBaja" Type="datetime" />
+    <Property Name="E_Avatar" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="fk_CheckIn_Empleado">
+    <End Role="tb_Empleados" Type="Self.tb_Empleados" Multiplicity="0..1" />
+    <End Role="tb_Checador_Entradas" Type="Self.tb_Checador_Entradas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Empleados">
+        <PropertyRef Name="IdEmpleado" />
+      </Principal>
+      <Dependent Role="tb_Checador_Entradas">
+        <PropertyRef Name="IdEmpleado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Empleados_Tienda">
+    <End Role="T_Tiendas" Type="Self.T_Tiendas" Multiplicity="0..1" />
+    <End Role="tb_Empleados" Type="Self.tb_Empleados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_Tiendas">
+        <PropertyRef Name="ID_Tienda" />
+      </Principal>
+      <Dependent Role="tb_Empleados">
+        <PropertyRef Name="IdTienda" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Libretas_tb_empleadosStoreContainer">
+    <EntitySet Name="T_Tiendas" EntityType="Self.T_Tiendas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_Empleados" EntityType="Self.tb_Empleados" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_Checador_Entradas" EntityType="Self.tb_Checador_Entradas" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tb_Checador_Entradas].[IdRegistroEntrada] AS [IdRegistroEntrada], 
+    [tb_Checador_Entradas].[IdEmpleado] AS [IdEmpleado], 
+    [tb_Checador_Entradas].[Registro] AS [Registro]
+    FROM [dbo].[tb_Checador_Entradas] AS [tb_Checador_Entradas]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="fk_CheckIn_Empleado" Association="Self.fk_CheckIn_Empleado">
+      <End Role="tb_Empleados" EntitySet="tb_Empleados" />
+      <End Role="tb_Checador_Entradas" EntitySet="tb_Checador_Entradas" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Empleados_Tienda" Association="Self.fk_Empleados_Tienda">
+      <End Role="T_Tiendas" EntitySet="T_Tiendas" />
+      <End Role="tb_Empleados" EntitySet="tb_Empleados" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,166 @@
+﻿@model IEnumerable<SISTEMA.Models.Empleados.EmpleadoModel>
+
+@{
+    ViewBag.Title = "Lista de Empleados";
+}
+
+@*Calendarios*@
+@Styles.Render("~/bundles/css/Almanaque")
+@Scripts.Render("~/bundles/js/Almanaque")
+
+@Styles.Render("~/bundles/css/paguinado")
+@Scripts.Render("~/bundles/js/paguinado")
+
+@* Render the custom bundles *@
+@Scripts.Render("~/bundles/js/BuscaEmpleado")
+
+@*Required Propio*@
+@Styles.Render("~/bundles/css/requerido")
+
+    <div class="container-fluid">
+
+        <!-- Page Add new Empleado -->
+        <div class="row">
+
+            <div class="col-4">
+                <label for="cboTiendas">Tienda</label>
+                <select class="custom-select custom-select-lg mb-3" id="cboTiendas" onchange="SeleccionaEmpleados()"></select>
+            </div>
+            <div class="col-4"></div>
+            <div class="col-4">
+                <!--Se envia el cero para indicarle al js que limpie el modal-->
+                <button class="d-none d-sm-inline-block btn btn-lg btn-facebook shadow-lg float-right"
+                        data-toggle="modal" data-target="#ModalEmpleado" onclick="Action_Empleado(0)">
+                    <i class="fas fa-user-plus fa-3x text-white-50"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Page Table Empleados -->
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">@ViewBag.Title</h6>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive" id="dataTableEmpleados">
+
+                </div>
+            </div>
+        </div>
+        <!-- END Page Table Empleados -->
+
+        <!-- Modal Empleados-->
+        <div class="modal fade" id="ModalEmpleado" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Información del Empleado</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="LimpiaFotito()">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        @*FORMULARIO DETALLES DEL EMPLEADO*@
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label for="formGroupExampleInput">CB</label>
+                                <input type="number" class="form-control autoclean" id="txtCB" placeholder="..." required>
+                            </div>
+                            <div class="col-sm-3"> </div>
+                            <div class="col-sm-3">
+                                <!-- Material switch -->
+                                <label>Baja / Activo</label><br />
+                                <label class="switch">
+                                    <input type="checkbox" id="chkboxActiveBaja" />
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <h1 class="h4 text-gray-900 mb-4">Datos Personales</h1>
+                            <hr class="sidebar-divider my-3">
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <img class="img-profile" width="80" height="100" style="border:1px solid" id="imgFoto" />
+                                
+                            </div>
+                            <div class="col-sm-12">
+                                
+                                <input type="file" value="..." id="btnFoto" onchange="previewImg(this)" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <input type="text" class="autoclean" id="txtIdEmpleado" hidden="hidden" />
+                            <div class="col-sm-12">
+                                <label for="txtName">Nombre Completo</label>
+                                <div><input type="text" class="form-control autoclean obligatorio" id="txtName" placeholder="..."></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-12">
+                                <label for="txtDireccion">Dirección</label>
+                                <input type="text" class="form-control autoclean" id="txtDireccion" placeholder="...">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-5">
+                                <label for="datepickerFNacimiento">Fecha de Nacimiento</label>
+                                <div><input type="text" class="form-control autoclean obligatorio" id="datepickerFNacimiento" placeholder="..."></div>
+                            </div>
+                            <div class="col-sm-7">
+                                <label for="txtTelefono">Telefono</label>
+                                <input type="number" class="form-control autoclean" id="txtTelefono" placeholder="55">
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <h1 class="h4 text-gray-900 mb-4">Tienda</h1>
+                            <hr class="sidebar-divider my-3">
+
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label for="cboTiendasEleccion">Tienda</label>
+                                <select class="custom-select" id="cboTiendasEleccion">
+                                </select>
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="cboSucursalEleccion">Sucursal</label>
+                                <select class="custom-select" id="cboSucursalEleccion">
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+
+                            <div class="col-sm-5">
+                                <label for="datepickerFIngreso">Fecha de Ingreso</label>
+                                <div><input type="text" class="form-control autoclean obligatorio" id="datepickerFIngreso" placeholder="..."></div>
+                            </div>
+                            <div class="col-sm-7">
+                                <label for="txtPuesto">Puesto</label>
+                                <input type="text" class="form-control autoclean" id="txtPuesto" placeholder="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div><button onclick="Validar()" type="button" class="btn btn-primary">Aceptar</button></div>
+                        <button id="btnCancel" type="button" class="btn btn-secondary" data-dismiss="modal" onclick="LimpiaFotito()" >Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--END Modal Empleados-->
+
+
+    </div>
+
+<script type="text/javascript">
+                    var moduleList = JSON.parse('@Html.Raw(Json.Encode(@Model))');
+            crearListadoEmpleado(moduleList);
+</script>

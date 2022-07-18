@@ -1,0 +1,136 @@
+﻿@model SISTEMA.Models.Empleados.EmpleadoViewModel
+
+@{
+    ViewBag.Title = "Nuevo Empleado";
+}
+
+
+<div class="card o-hidden border-0 shadow-lg my-5">
+    <div class="card-body p-0">
+        <!-- Nested Row within Card Body -->
+        <div class="row">
+
+            <div class="col-lg-5 d-none d-lg-block bg-register-image"></div>
+            <div class="col-lg-7">
+                <div class="p-5">
+                    <div class="text-center">
+                        <h1 class="h4 text-gray-900 mb-4">@ViewBag.Title!</h1>
+                        <hr class="sidebar-divider my-5">
+                    </div>
+
+
+                    @using (Html.BeginForm("Create", "EmpleadosController", FormMethod.Post))
+                    {
+                        <div class="form-group row">
+                            <div class="col-sm-6 mb-3 mb-sm-0">
+                                @Html.LabelFor(d => d.CBEmpleado)
+                                @Html.TextBoxFor(d => d.CBEmpleado, "", new { @class = "form-control" })
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <h1 class="h4 text-gray-900 mb-4">Datos Personales</h1>
+                            <hr class="sidebar-divider my-3">
+                        </div>
+                        
+                        <div class="form-group row">
+                            <div class="col-sm-8">
+                                @Html.LabelFor(d => d.NameComplete)
+                                @Html.TextBoxFor(d => d.NameComplete, "", new { @class = "form-control" })
+                                @Html.ValidationMessageFor(d=>d.NameComplete,"*")
+                            </div>
+                            <div class="col-sm-4 mb-3 mb-sm-0">
+                                @Html.LabelFor(d => d.E_Sexo)
+                                @Html.TextBoxFor(d => d.E_Sexo, "", new { @class = "form-control" })
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-12 mb-3 mb-sm-0">
+                                @Html.LabelFor(d => d.E_Direccion)
+                                @Html.TextBoxFor(d => d.E_Direccion, "", new { @class = "form-control" })
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-8 mb-3 mb-sm-0">
+                                @Html.LabelFor(d => d.E_LNacimiento)
+                                @Html.TextBoxFor(d => d.E_LNacimiento, "", new { @class = "form-control" })
+                            </div>
+                            <div class="col-sm-4">
+                                @Html.LabelFor(d => d.E_FechaNacimiento)
+                                @Html.TextBoxFor(d => d.E_FechaNacimiento, "", new { @class = "form-control" })
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-3">
+                                @Html.LabelFor(d => d.E_ECivil)
+                                @Html.TextBoxFor(d => d.E_ECivil, "", new { @class = "form-control" })
+                            </div>
+                            <div class="col-sm-3">
+                                @Html.LabelFor(d => d.E_Telefono)
+                                @Html.TextBoxFor(d => d.E_Telefono, "", new { @class = "form-control" })
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(d => d.E_Email)
+                            @Html.TextBoxFor(d => d.E_Email, "", new { @class = "form-control" })
+                        </div>
+
+                        <div class="text-center">
+                            <h1 class="h4 text-gray-900 mb-4">Nivel de Estudios</h1>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                @Html.LabelFor(d => d.E_Cedula)
+                                @Html.TextBoxFor(d => d.E_Cedula, "", new { @class = "form-control" })
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <h1 class="h4 text-gray-900 mb-4">Sucursal</h1>
+                            <hr class="sidebar-divider my-3">   
+                        </div>
+                        
+                        <hr class="sidebar-divider my-0">
+                        <div class="form-group row">
+                            
+                            <div class="col-sm-3">
+
+                                @Html.LabelFor(d => d.E_Sucursal)
+                                @Html.TextBoxFor(d => d.E_Sucursal, "", new { @class = "form-control" })
+                            </div>
+
+                            <div class="col-sm-3">
+                                @Html.LabelFor(d => d.Puesto)
+                                @Html.TextBoxFor(d => d.Puesto, "", new { @class = "form-control" })
+                            </div>
+                            <div class="col-sm-3 mb-3 mb-sm-0">
+                                @Html.LabelFor(d => d.E_FechaIngreso)
+                                @Html.TextBoxFor(d => d.E_FechaIngreso, "", new { @class = "form-control" })
+                            </div>
+                        </div>
+                        <div class="text-lg-right">
+                            <a href="@Url.Action("NewEmpleado", "Empleados")" class="btn btn-primary btn-lg">
+                                <i class="fas fa-save"> </i>Guardar
+                            </a>
+                        </div>
+
+                        @*@Html.LabelFor(d => d.E_Avatar)
+            @Html.TextBoxFor(d => d.E_Avatar, "", new { @class = "form-control" })
+            @Html.LabelFor(d => d.FAlta)
+            @Html.TextBoxFor(d => d.FAlta, "", new { @class = "form-control" })*@
+                    };
+
+
+
+                </div>
+
+
+                    </div>
+        </div>
+   
+    </div>
+</div>

@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LibretasModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="L_User">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LUser" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Pass" Type="varchar(max)" />
+    <Property Name="TypePersonID" Type="int" />
+    <Property Name="U_E_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="PAGINAS">
+    <Key>
+      <PropertyRef Name="P_ID" />
+    </Key>
+    <Property Name="P_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="P_NAME" Type="varchar" MaxLength="100" />
+    <Property Name="P_CONTROLLER" Type="varchar" MaxLength="100" />
+    <Property Name="P_ACTION" Type="varchar" MaxLength="100" />
+    <Property Name="P_H" Type="int" />
+    <Property Name="P_CHILDOF" Type="int" />
+  </EntityType>
+  <EntityType Name="ROLES">
+    <Key>
+      <PropertyRef Name="R_ID" />
+    </Key>
+    <Property Name="R_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="R_NAME" Type="varchar" MaxLength="100" />
+    <Property Name="R_DESC" Type="varchar" MaxLength="100" />
+    <Property Name="R_H" Type="int" />
+  </EntityType>
+  <EntityType Name="ROLPAGINAS">
+    <Key>
+      <PropertyRef Name="RP_ID" />
+    </Key>
+    <Property Name="RP_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RP_R_ID" Type="int" />
+    <Property Name="RP_P_ID" Type="int" />
+    <Property Name="RP_H" Type="int" />
+  </EntityType>
+  <EntityType Name="T_TCliente">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tipo" Type="varchar" MaxLength="20" />
+    <Property Name="habilitado" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_Empleados">
+    <Key>
+      <PropertyRef Name="IdEmpleado" />
+    </Key>
+    <Property Name="IdEmpleado" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CBEmpleado" Type="varchar" MaxLength="60" />
+    <Property Name="NameComplete" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="IdTienda" Type="int" />
+    <Property Name="E_FechaIngreso" Type="datetime" Nullable="false" />
+    <Property Name="E_FechaNacimiento" Type="datetime" Nullable="false" />
+    <Property Name="E_LNacimiento" Type="nvarchar" MaxLength="45" />
+    <Property Name="E_Cedula" Type="nvarchar" MaxLength="45" />
+    <Property Name="E_Sexo" Type="nvarchar" MaxLength="45" />
+    <Property Name="E_Sucursal" Type="varchar" MaxLength="100" />
+    <Property Name="E_ECivil" Type="nvarchar" MaxLength="45" />
+    <Property Name="E_Email" Type="nvarchar" MaxLength="45" />
+    <Property Name="E_Telefono" Type="nvarchar" MaxLength="45" />
+    <Property Name="E_Direccion" Type="nvarchar(max)" />
+    <Property Name="FAlta" Type="datetime" />
+    <Property Name="E_FBaja" Type="datetime" />
+    <Property Name="E_Avatar" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="FK__L_User__TypePers__6BCEF5F8">
+    <End Role="T_TCliente" Type="Self.T_TCliente" Multiplicity="0..1" />
+    <End Role="L_User" Type="Self.L_User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_TCliente">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="L_User">
+        <PropertyRef Name="TypePersonID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__L_User__U_E_ID__737017C0">
+    <End Role="tb_Empleados" Type="Self.tb_Empleados" Multiplicity="0..1" />
+    <End Role="L_User" Type="Self.L_User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Empleados">
+        <PropertyRef Name="IdEmpleado" />
+      </Principal>
+      <Dependent Role="L_User">
+        <PropertyRef Name="U_E_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ROLPAGINA__RP_P___049AA3C2">
+    <End Role="PAGINAS" Type="Self.PAGINAS" Multiplicity="0..1" />
+    <End Role="ROLPAGINAS" Type="Self.ROLPAGINAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PAGINAS">
+        <PropertyRef Name="P_ID" />
+      </Principal>
+      <Dependent Role="ROLPAGINAS">
+        <PropertyRef Name="RP_P_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ROLPAGINA__RP_R___03A67F89">
+    <End Role="ROLES" Type="Self.ROLES" Multiplicity="0..1" />
+    <End Role="ROLPAGINAS" Type="Self.ROLPAGINAS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ROLES">
+        <PropertyRef Name="R_ID" />
+      </Principal>
+      <Dependent Role="ROLPAGINAS">
+        <PropertyRef Name="RP_R_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="LibretasModelStoreContainer">
+    <EntitySet Name="L_User" EntityType="Self.L_User" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PAGINAS" EntityType="Self.PAGINAS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ROLES" EntityType="Self.ROLES" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ROLPAGINAS" EntityType="Self.ROLPAGINAS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_TCliente" EntityType="Self.T_TCliente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_Empleados" EntityType="Self.tb_Empleados" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__L_User__TypePers__6BCEF5F8" Association="Self.FK__L_User__TypePers__6BCEF5F8">
+      <End Role="T_TCliente" EntitySet="T_TCliente" />
+      <End Role="L_User" EntitySet="L_User" />
+    </AssociationSet>
+    <AssociationSet Name="FK__L_User__U_E_ID__737017C0" Association="Self.FK__L_User__U_E_ID__737017C0">
+      <End Role="tb_Empleados" EntitySet="tb_Empleados" />
+      <End Role="L_User" EntitySet="L_User" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ROLPAGINA__RP_P___049AA3C2" Association="Self.FK__ROLPAGINA__RP_P___049AA3C2">
+      <End Role="PAGINAS" EntitySet="PAGINAS" />
+      <End Role="ROLPAGINAS" EntitySet="ROLPAGINAS" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ROLPAGINA__RP_R___03A67F89" Association="Self.FK__ROLPAGINA__RP_R___03A67F89">
+      <End Role="ROLES" EntitySet="ROLES" />
+      <End Role="ROLPAGINAS" EntitySet="ROLPAGINAS" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

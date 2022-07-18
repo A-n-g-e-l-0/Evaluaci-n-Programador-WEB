@@ -1,0 +1,182 @@
+﻿@model IEnumerable<SISTEMA.Models.Empleados.EmpleadoViewModel>
+@{
+    ViewBag.Title = "Empleados dados de Baja";
+}
+
+@*Calendarios*@
+@Styles.Render("~/bundles/css/Almanaque")
+@Scripts.Render("~/bundles/js/Almanaque")
+
+@Styles.Render("~/bundles/css/paguinado")
+@Scripts.Render("~/bundles/js/paguinado")
+
+@* Render the custom bundles *@
+@Scripts.Render("~/bundles/js/BajasEmpleado")
+
+@*Required Propio*@
+@Styles.Render("~/bundles/css/requerido")
+
+<!-- Page Add new Empleado -->
+<div class="row">
+
+    <div class="col-4">
+        <label for="cboTiendas">Tienda</label>
+        <select class="custom-select custom-select-lg mb-3" id="cboTiendas" onchange="SeleccionaEmpleadosBaja()">
+        </select>
+
+    </div>
+
+    <div class="col-4"></div>
+    <div class="col-4"></div>
+
+
+
+</div>
+
+<!-- Page Table Empleados -->
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">@ViewBag.Title</h6>
+
+    </div>
+    <div class="card-body">
+        <div class="table-responsive" id="dataTableEmpleadosBaja">
+
+        </div>
+    </div>
+</div>
+
+<!-- Modal Empleados-->
+<div class="modal fade" id="ModalEmpleado" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Información del Empleado</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                @*FORMULARIO DETALLES DEL EMPLEADO*@
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="formGroupExampleInput">CB</label>
+                        <input type="number" class="form-control autoclean" id="txtCB" placeholder="...">
+                    </div>
+                    <div class="col-sm-3"> </div>
+                    <div class="col-sm-3">
+                        <!-- Material switch -->
+                        <label>Baja / Activo</label><br />
+                        <label class="switch">
+                            <input type="checkbox" id="chkboxActiveBaja"/>
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <h1 class="h4 text-gray-900 mb-4">Datos Personales</h1>
+                    <hr class="sidebar-divider my-3">
+                </div>
+
+                <div class="form-group row">
+                    <input type="text" class="autoclean" id="txtIdEmpleado" hidden="hidden" />
+                    <div class="col-sm-6">
+                        <label for="txtName">Nombre Completo</label>
+                        <input type="text" class="form-control autoclean obligatorio" id="txtName" placeholder="...">
+                    </div>
+                    <div class="col-sm-4 mb-3 mb-sm-0">
+                        <label for="txtSexo">Sexo</label>
+                        <input type="text" class="form-control autoclean" id="txtSexo" placeholder="...">
+                    </div>
+                    <div class="col-sm-2 mb-3 mb-sm-0">
+                        <label for="txtEdoCivil">Estado Civil</label>
+                        <input type="text" class="form-control autoclean" id="txtEdoCivil" placeholder="...">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-sm-12 mb-3 mb-sm-0">
+                        <label for="txtDireccion">Dirección</label>
+                        <input type="text" class="form-control autoclean" id="txtDireccion" placeholder="...">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-sm-8 mb-3 mb-sm-0">
+                        <label for="txtLNacimiento">Lugar de Nacimiento</label>
+                        <input type="text" class="form-control autoclean" id="txtLNacimiento" placeholder="...">
+                    </div>
+                    <div class="col-sm-4">
+                        <label for="datepickerFNacimiento">Fecha de Nacimiento</label>
+                        <input type="text" class="form-control autoclean obligatorio" id="datepickerFNacimiento" placeholder="...">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-sm-4">
+                        <label for="txtTelefono">Telefono</label>
+                        <input type="number" class="form-control autoclean" id="txtTelefono" placeholder="55">
+                    </div>
+                    <div class="col-sm-8">
+                        <label for="txtEMail">Correo Electronico</label>
+                        <input type="email" class="form-control autoclean" id="txtEMail" placeholder="name@example.com">
+                    </div>
+
+                </div>
+
+                <div class="text-center">
+                    <h1 class="h4 text-gray-900 mb-4">Nivel de Estudios</h1>
+                    <hr class="sidebar-divider my-3">
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-sm-12">
+                        <label for="txtCEstudios">Comprobante de Estudios</label>
+                        <input type="text" class="form-control autoclean" id="txtCEstudios" placeholder="...">
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <h1 class="h4 text-gray-900 mb-4">Tienda</h1>
+                    <hr class="sidebar-divider my-3">
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-sm-4">
+                        <label for="txtSucursal">Tienda</label>
+                        <select class="custom-select" id="cboTiendasEleccion">
+                        </select>
+                    </div>
+                    <div class="col-sm-4">
+                        <label for="txtPuesto">Puesto</label>
+                        <input type="text" class="form-control autoclean" id="txtPuesto" placeholder="...">
+                    </div>
+                    <div class="col-sm-4 mb-3 mb-sm-0">
+                        <label for="datepickerFIngreso">Fecha de Ingreso</label>
+                        <input type="text" class="form-control autoclean obligatorio" id="datepickerFIngreso" placeholder="...">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Foto</label>
+                    <img class="img-profile" id="imgFoto" />
+                </div>
+
+
+            </div>
+            <div class="modal-footer">
+                <button onclick="Validar()" type="button" class="btn btn-primary">Aceptar</button>
+                <button id="btnCancel" type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--END Modal Empleados-->
+
+
+<script type="text/javascript">
+                    var moduleList = JSON.parse('@Html.Raw(Json.Encode(@Model))');
+    crearListadoBajasEmpleados(["Empleado", "Puesto", "Sucursal", "Detalles"], moduleList);
+</script>

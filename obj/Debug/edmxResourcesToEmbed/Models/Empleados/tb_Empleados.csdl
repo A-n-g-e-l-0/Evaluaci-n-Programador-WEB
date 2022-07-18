@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Libretas_tb_empleados" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tb_Empleados">
+    <Key>
+      <PropertyRef Name="IdEmpleado" />
+    </Key>
+    <Property Name="IdEmpleado" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CBEmpleado" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="NameComplete" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IdTienda" Type="Int32" />
+    <Property Name="E_FechaIngreso" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="E_FechaNacimiento" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="E_LNacimiento" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Name="E_Cedula" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Name="E_Sexo" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Name="E_Sucursal" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="E_ECivil" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Name="E_Email" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Name="E_Telefono" Type="String" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Name="E_Direccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="FAlta" Type="DateTime" Precision="3" />
+    <Property Name="E_FBaja" Type="DateTime" Precision="3" />
+    <Property Name="E_Avatar" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tb_Empleados" EntityType="Self.tb_Empleados" />
+  </EntityContainer>
+</Schema>

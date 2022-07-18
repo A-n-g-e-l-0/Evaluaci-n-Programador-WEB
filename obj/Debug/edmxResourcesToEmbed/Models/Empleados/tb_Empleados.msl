@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Libretas_tb_empleadosStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="tb_Empleados">
+      <EntityTypeMapping TypeName="Libretas_tb_empleados.tb_Empleados">
+        <MappingFragment StoreEntitySet="tb_Empleados">
+          <ScalarProperty Name="IdEmpleado" ColumnName="IdEmpleado" />
+          <ScalarProperty Name="CBEmpleado" ColumnName="CBEmpleado" />
+          <ScalarProperty Name="NameComplete" ColumnName="NameComplete" />
+          <ScalarProperty Name="IdTienda" ColumnName="IdTienda" />
+          <ScalarProperty Name="E_FechaIngreso" ColumnName="E_FechaIngreso" />
+          <ScalarProperty Name="E_FechaNacimiento" ColumnName="E_FechaNacimiento" />
+          <ScalarProperty Name="E_LNacimiento" ColumnName="E_LNacimiento" />
+          <ScalarProperty Name="E_Cedula" ColumnName="E_Cedula" />
+          <ScalarProperty Name="E_Sexo" ColumnName="E_Sexo" />
+          <ScalarProperty Name="E_Sucursal" ColumnName="E_Sucursal" />
+          <ScalarProperty Name="E_ECivil" ColumnName="E_ECivil" />
+          <ScalarProperty Name="E_Email" ColumnName="E_Email" />
+          <ScalarProperty Name="E_Telefono" ColumnName="E_Telefono" />
+          <ScalarProperty Name="E_Direccion" ColumnName="E_Direccion" />
+          <ScalarProperty Name="FAlta" ColumnName="FAlta" />
+          <ScalarProperty Name="E_FBaja" ColumnName="E_FBaja" />
+          <ScalarProperty Name="E_Avatar" ColumnName="E_Avatar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

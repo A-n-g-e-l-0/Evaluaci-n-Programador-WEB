@@ -1,0 +1,129 @@
+﻿@{
+    ViewBag.Title = "Tiendas Matriz";
+}
+@Scripts.Render("~/bundles/js")
+@Scripts.Render("~/bundles/js/LoadUser")
+
+@Styles.Render("~/bundles/css")
+
+@* Javascript Tiendas *@
+@Scripts.Render("~/bundles/js/Tiendas")
+
+@*Required Propio*@
+@Styles.Render("~/bundles/css/requerido")
+
+
+<h5>@ViewBag.Title</h5>
+
+<div id="wrapper">
+
+    <!--Sidebar Menu de Tiendas Matriz -->
+    <ul class="navbar-nav bg-white sidebar  accordion" id="accordionSidebarMenuTiendasMatriz">
+    </ul>
+
+    <!--END Sidebar Menu de Tiendas Matriz -->
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+        <!-- Main Content -->
+        <div id="content">
+            <!-- Begin Page Content -->
+            <div class="container-fluid">
+
+
+                <!-- Begin Panel Fade for show the Info at the Page Tienda's "<div class='card mb-3' '>" +//style='max-width: 35rem; PARA EL ANCHO DE LA TARJETITA-->
+                <div class='card mb-5' id='nav-tabContent'>
+
+
+                </div>
+                <!-- End Panel Fade for show the Info T Page Tienda's -->
+
+
+            </div>
+            <!-- End Page Content -->
+        </div>
+        <!-- End Content -->
+    </div>
+    <!-- End Content Wrapper -->
+</div>
+<!-- End Wrapper -->
+<!-- Modal Tiendas Matriz-->
+<div class="modal fade" id="ModalTienda" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Tienda Matriz</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                @*FORMULARIO DETALLES TIENDA*@
+
+
+                <form>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <label for="formGroupExampleInput">TIENDA MATRIZ</label>
+                            <div><input type="text" class="form-control autoclean obligatorio" id="txtTienda" placeholder="Nombre Corto" required></div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="inputAddress">Dirección</label>
+                        <div><input type="text" class="form-control autoclean obligatorio" id="txtDireccionTienda" placeholder="1234 Mex, Mex"></div>
+                    </div>
+
+                    <!-- RFC RSOC CURP ETC HASTA QUE EVOLUCIONE A FACTURACION-->
+
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button onclick="Validar()" type="button" class="btn btn-primary">Agregar Tienda</button>
+                <button id="btnCancel" type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--END Modal Tiendas Matriz-->
+<!-- Modal Sucursal-->
+<div class="modal fade" id="ModalSucursal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">SUCURSAL</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                @*FORMULARIO DETALLES SUCURSALES*@
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="formGroupExampleInput">Matriz</label>
+                        <input type="text" class="form-control" name="idkl" id="idkl_Tienda" value="" readonly>
+                        <input type="hidden" class="form-control" name="idkl" id="idkl_TiendaID" value="">
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="formGroupExampleInput">Ingrese Sucursal:</label>
+                        <div><input type="text" class="form-control autoclean obligatoriosuc" id="txtSucursal" placeholder="Bodega..." required></div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress">Dirección</label>
+                    <div><input type="text" class="form-control autoclean obligatoriosuc" id="txtDireccionSucursal" placeholder="1234 Mex, Mex"></div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button onclick="ValidarSucursal()" type="button" class="btn btn-primary">Agrega Sucursal</button>
+                <button id="btnCancelSuc" type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--END Modal Sucursal-->

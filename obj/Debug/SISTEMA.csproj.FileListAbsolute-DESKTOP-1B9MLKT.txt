@@ -1,0 +1,2 @@
+O:\OneDrive\Sistemas\SISTEMA\obj\Debug\SISTEMA.csprojAssemblyReference.cache
+O:\OneDrive\Sistemas\SISTEMA\obj\Debug\SISTEMA.csproj.CoreCompileInputs.cache

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="891b64105ae84488b21e59db64b1a527" Name="Diagram1">
+        <EntityTypeShape EntityType="LibretasModel.L_User" Width="1.5" PointX="5" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibretasModel.PAGINAS" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibretasModel.ROLES" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibretasModel.ROLPAGINAS" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibretasModel.T_TCliente" Width="1.5" PointX="2.75" PointY="5.125" IsExpanded="true" />
+        <AssociationConnector Association="LibretasModel.FK__L_User__TypePers__6BCEF5F8" ManuallyRouted="false" />
+        <AssociationConnector Association="LibretasModel.FK__ROLPAGINA__RP_P___049AA3C2" ManuallyRouted="false" />
+        <AssociationConnector Association="LibretasModel.FK__ROLPAGINA__RP_R___03A67F89" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="LibretasModel.tb_Empleados" Width="1.5" PointX="2.75" PointY="8.875" />
+        <AssociationConnector Association="LibretasModel.FK__L_User__U_E_ID__737017C0" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,587 @@
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\SISTEMA.dll.config
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\SISTEMA.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\SISTEMA.pdb
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\csc.exe
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\csc.exe.config
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\csc.rsp
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\csi.exe
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\csi.exe.config
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\csi.rsp
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\System.AppContext.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\System.Console.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\System.IO.Compression.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\System.Net.Http.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\System.Net.Sockets.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\System.ValueTuple.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\System.Xml.XPath.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\vbc.exe
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\vbc.exe.config
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\vbc.rsp
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\VBCSCompiler.exe
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\Antlr3.Runtime.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\EntityFramework.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\EntityFramework.SqlServer.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\Newtonsoft.Json.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\System.Web.Helpers.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\System.Web.Mvc.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\System.Web.Optimization.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\System.Web.Razor.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\System.Web.WebPages.Deployment.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\System.Web.WebPages.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\System.Web.WebPages.Razor.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\WebGrease.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\EntityFramework.xml
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\EntityFramework.SqlServer.xml
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\System.Web.Helpers.xml
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\System.Web.Mvc.xml
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\System.Web.Optimization.xml
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\System.Web.Razor.xml
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\System.Web.WebPages.xml
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\System.Web.WebPages.Deployment.xml
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\System.Web.WebPages.Razor.xml
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\Newtonsoft.Json.xml
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\Antlr3.Runtime.pdb
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\es\System.Web.Helpers.resources.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\es\System.Web.Mvc.resources.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\es\System.Web.Optimization.resources.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\es\System.Web.Razor.resources.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\es\System.Web.WebPages.resources.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\obj\Debug\SISTEMA.csprojAssemblyReference.cache
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\obj\Debug\SISTEMA.csproj.CoreCompileInputs.cache
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\obj\Debug\SISTEMA.csproj.CopyComplete
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\obj\Debug\SISTEMA.dll
+C:\Users\AngelOmar\source\repos\SISTEMA LOS UNICOS COLORES DE CUAUTITLAN SA DE CV\SISTEMA\obj\Debug\SISTEMA.pdb
+O:\OneDrive\Sistemas\SISTEMA\bin\SISTEMA.dll.config
+O:\OneDrive\Sistemas\SISTEMA\bin\SISTEMA.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\SISTEMA.pdb
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\csc.exe
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\csc.exe.config
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\csc.rsp
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\csi.exe
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\csi.exe.config
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\csi.rsp
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\Microsoft.CodeAnalysis.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\Microsoft.CSharp.Core.targets
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\Microsoft.Managed.Core.targets
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\Microsoft.VisualBasic.Core.targets
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\Microsoft.Win32.Primitives.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\System.AppContext.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\System.Collections.Immutable.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\System.Console.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\System.Diagnostics.StackTrace.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\System.Globalization.Calendars.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\System.IO.Compression.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\System.IO.Compression.ZipFile.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\System.IO.FileSystem.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\System.IO.FileSystem.Primitives.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\System.Net.Http.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\System.Net.Sockets.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\System.Reflection.Metadata.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\System.Security.Cryptography.Encoding.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\System.Security.Cryptography.Primitives.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\System.Text.Encoding.CodePages.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\System.Threading.Tasks.Extensions.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\System.ValueTuple.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\System.Xml.ReaderWriter.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\System.Xml.XmlDocument.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\System.Xml.XPath.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\System.Xml.XPath.XDocument.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\vbc.exe
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\vbc.exe.config
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\vbc.rsp
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\VBCSCompiler.exe
+O:\OneDrive\Sistemas\SISTEMA\bin\roslyn\VBCSCompiler.exe.config
+O:\OneDrive\Sistemas\SISTEMA\bin\Antlr3.Runtime.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\ClosedXML.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\DocumentFormat.OpenXml.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\EntityFramework.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\EntityFramework.SqlServer.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\ExcelNumberFormat.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\Microsoft.Web.Infrastructure.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\Newtonsoft.Json.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\System.IO.Packaging.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\System.Web.Helpers.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\System.Web.Mvc.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\System.Web.Optimization.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\System.Web.Razor.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\System.Web.WebPages.Deployment.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\System.Web.WebPages.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\System.Web.WebPages.Razor.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\WebGrease.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\ClosedXML.pdb
+O:\OneDrive\Sistemas\SISTEMA\bin\ClosedXML.xml
+O:\OneDrive\Sistemas\SISTEMA\bin\DocumentFormat.OpenXml.xml
+O:\OneDrive\Sistemas\SISTEMA\bin\EntityFramework.xml
+O:\OneDrive\Sistemas\SISTEMA\bin\EntityFramework.SqlServer.xml
+O:\OneDrive\Sistemas\SISTEMA\bin\ExcelNumberFormat.xml
+O:\OneDrive\Sistemas\SISTEMA\bin\System.Web.Helpers.xml
+O:\OneDrive\Sistemas\SISTEMA\bin\System.Web.Mvc.xml
+O:\OneDrive\Sistemas\SISTEMA\bin\System.Web.Optimization.xml
+O:\OneDrive\Sistemas\SISTEMA\bin\System.Web.Razor.xml
+O:\OneDrive\Sistemas\SISTEMA\bin\System.Web.WebPages.xml
+O:\OneDrive\Sistemas\SISTEMA\bin\System.Web.WebPages.Deployment.xml
+O:\OneDrive\Sistemas\SISTEMA\bin\System.Web.WebPages.Razor.xml
+O:\OneDrive\Sistemas\SISTEMA\bin\Newtonsoft.Json.xml
+O:\OneDrive\Sistemas\SISTEMA\bin\Antlr3.Runtime.pdb
+O:\OneDrive\Sistemas\SISTEMA\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+O:\OneDrive\Sistemas\SISTEMA\bin\es\System.Web.Helpers.resources.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\es\System.Web.Mvc.resources.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\es\System.Web.Optimization.resources.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\es\System.Web.Razor.resources.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\es\System.Web.WebPages.resources.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\es\System.Web.WebPages.Deployment.resources.dll
+O:\OneDrive\Sistemas\SISTEMA\bin\es\System.Web.WebPages.Razor.resources.dll
+O:\OneDrive\Sistemas\SISTEMA\obj\Debug\SISTEMA.csproj.CoreCompileInputs.cache
+O:\OneDrive\Sistemas\SISTEMA\obj\Debug\SISTEMA.csproj.CopyComplete
+O:\OneDrive\Sistemas\SISTEMA\obj\Debug\SISTEMA.dll
+O:\OneDrive\Sistemas\SISTEMA\obj\Debug\SISTEMA.pdb
+O:\OneDrive\Sistemas\SISTEMA\obj\Debug\SISTEMA.csproj.AssemblyReference.cache
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\SISTEMA.dll.config
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\SISTEMA.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\SISTEMA.pdb
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\csc.exe
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\csc.exe.config
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\csc.rsp
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\csi.exe
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\csi.exe.config
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\csi.rsp
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\System.AppContext.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\System.Console.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\System.IO.Compression.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\System.Net.Http.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\System.ValueTuple.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\vbc.exe
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\vbc.exe.config
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\vbc.rsp
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\VBCSCompiler.exe
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\Antlr3.Runtime.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\ClosedXML.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\DocumentFormat.OpenXml.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\EntityFramework.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\EntityFramework.SqlServer.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\ExcelNumberFormat.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\Newtonsoft.Json.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\System.Data.SQLite.DLL
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\System.IO.Packaging.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\System.Web.Helpers.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\System.Web.Mvc.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\System.Web.Optimization.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\System.Web.Razor.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\System.Web.WebPages.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\System.Web.WebPages.Razor.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\WebGrease.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\ClosedXML.pdb
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\ClosedXML.xml
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\DocumentFormat.OpenXml.xml
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\EntityFramework.xml
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\EntityFramework.SqlServer.xml
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\ExcelNumberFormat.xml
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\System.Web.Helpers.xml
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\System.Web.Mvc.xml
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\System.Web.Optimization.xml
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\System.Web.Razor.xml
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\System.Web.WebPages.xml
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\System.Web.WebPages.Razor.xml
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\Newtonsoft.Json.xml
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\Antlr3.Runtime.pdb
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\es\System.Web.Razor.resources.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\obj\Debug\SISTEMA.csproj.AssemblyReference.cache
+C:\Users\Frog\Documents\WEB\SISTEMA\obj\Debug\SISTEMA.csproj.CoreCompileInputs.cache
+C:\Users\Frog\Documents\WEB\SISTEMA\obj\Debug\SISTEMA.csproj.CopyComplete
+C:\Users\Frog\Documents\WEB\SISTEMA\obj\Debug\SISTEMA.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\obj\Debug\SISTEMA.pdb
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\System.Data.SQLite.EF6.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\System.Data.SQLite.Linq.dll
+C:\Users\Frog\Documents\WEB\SISTEMA\bin\System.Data.SQLite.xml
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\SISTEMA.dll.config
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\SISTEMA.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\SISTEMA.pdb
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\csc.exe
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\csc.exe.config
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\csc.rsp
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\csi.exe
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\csi.exe.config
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\csi.rsp
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\System.AppContext.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\System.Console.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\System.IO.Compression.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\System.Net.Http.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\System.ValueTuple.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\vbc.exe
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\vbc.exe.config
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\vbc.rsp
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\VBCSCompiler.exe
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\Antlr3.Runtime.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\ClosedXML.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\DocumentFormat.OpenXml.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\ExcelNumberFormat.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\Newtonsoft.Json.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\System.IO.Packaging.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\System.Web.Helpers.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\System.Web.Mvc.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\System.Web.Optimization.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\System.Web.Razor.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\System.Web.WebPages.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\System.Web.WebPages.Razor.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\WebGrease.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\ClosedXML.pdb
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\ClosedXML.xml
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\DocumentFormat.OpenXml.xml
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\ExcelNumberFormat.xml
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\System.Web.Helpers.xml
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\System.Web.Mvc.xml
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\System.Web.Optimization.xml
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\System.Web.Razor.xml
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\System.Web.WebPages.xml
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\System.Web.WebPages.Razor.xml
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\Newtonsoft.Json.xml
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\Antlr3.Runtime.pdb
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\es\System.Web.Razor.resources.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\obj\Debug\SISTEMA.csproj.AssemblyReference.cache
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\obj\Debug\SISTEMA.csproj.CoreCompileInputs.cache
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\obj\Debug\SISTEMA.csproj.CopyComplete
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\obj\Debug\SISTEMA.dll
+C:\Users\Frog\source\repos\EP_WEB_2022\SISTEMA\obj\Debug\SISTEMA.pdb
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\SISTEMA.dll.config
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\SISTEMA.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\SISTEMA.pdb
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\csc.exe
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\csc.exe.config
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\csc.rsp
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\csi.exe
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\csi.exe.config
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\csi.rsp
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\System.AppContext.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\System.Console.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\System.IO.Compression.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\System.Net.Http.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\System.ValueTuple.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\vbc.exe
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\vbc.exe.config
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\vbc.rsp
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\VBCSCompiler.exe
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\Antlr3.Runtime.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\ClosedXML.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\DocumentFormat.OpenXml.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\EntityFramework.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\EntityFramework.SqlServer.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\ExcelNumberFormat.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\Newtonsoft.Json.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\System.Data.SQLite.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\System.Data.SQLite.EF6.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\System.Data.SQLite.Linq.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\System.IO.Packaging.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\System.Web.Helpers.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\System.Web.Mvc.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\System.Web.Optimization.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\System.Web.Razor.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\System.Web.WebPages.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\System.Web.WebPages.Razor.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\WebGrease.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\ClosedXML.pdb
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\ClosedXML.xml
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\DocumentFormat.OpenXml.xml
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\EntityFramework.xml
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\EntityFramework.SqlServer.xml
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\ExcelNumberFormat.xml
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\System.Data.SQLite.xml
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\System.Web.Helpers.xml
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\System.Web.Mvc.xml
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\System.Web.Optimization.xml
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\System.Web.Razor.xml
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\System.Web.WebPages.xml
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\System.Web.WebPages.Razor.xml
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\Newtonsoft.Json.xml
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\Antlr3.Runtime.pdb
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\es\System.Web.Razor.resources.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\obj\Debug\SISTEMA.csproj.AssemblyReference.cache
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\obj\Debug\SISTEMA.csproj.CoreCompileInputs.cache
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\obj\Debug\SISTEMA.csproj.CopyComplete
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\obj\Debug\SISTEMA.dll
+C:\Users\Frog\source\repos\Evaluaci-n-Programador-WEB\obj\Debug\SISTEMA.pdb
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\SISTEMA.dll.config
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\SISTEMA.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\SISTEMA.pdb
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\csc.exe
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\csc.exe.config
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\csc.rsp
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\csi.exe
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\csi.exe.config
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\csi.rsp
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\System.AppContext.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\System.Console.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\System.IO.Compression.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\System.Net.Http.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\System.ValueTuple.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\vbc.exe
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\vbc.exe.config
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\vbc.rsp
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\VBCSCompiler.exe
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\Antlr3.Runtime.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\ClosedXML.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\DocumentFormat.OpenXml.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\EntityFramework.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\EntityFramework.SqlServer.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\ExcelNumberFormat.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\Newtonsoft.Json.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\System.Data.SQLite.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\System.Data.SQLite.EF6.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\System.Data.SQLite.Linq.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\System.IO.Packaging.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\System.Web.Helpers.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\System.Web.Mvc.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\System.Web.Optimization.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\System.Web.Razor.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\System.Web.WebPages.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\System.Web.WebPages.Razor.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\WebGrease.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\ClosedXML.pdb
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\ClosedXML.xml
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\DocumentFormat.OpenXml.xml
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\EntityFramework.xml
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\EntityFramework.SqlServer.xml
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\ExcelNumberFormat.xml
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\System.Data.SQLite.xml
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\System.Web.Helpers.xml
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\System.Web.Mvc.xml
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\System.Web.Optimization.xml
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\System.Web.Razor.xml
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\System.Web.WebPages.xml
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\System.Web.WebPages.Razor.xml
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\Newtonsoft.Json.xml
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\Antlr3.Runtime.pdb
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\es\System.Web.Razor.resources.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\obj\Debug\SISTEMA.csproj.CoreCompileInputs.cache
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\obj\Debug\SISTEMA.csproj.CopyComplete
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\obj\Debug\SISTEMA.dll
+C:\Users\Frog\Source\Repos\Evaluacion-Programador-WEB\obj\Debug\SISTEMA.pdb

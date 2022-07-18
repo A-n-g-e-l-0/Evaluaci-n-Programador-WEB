@@ -1,0 +1,107 @@
+﻿@model SISTEMA.Models.Persona
+
+@{
+    Layout = null;
+}
+
+
+@Styles.Render("~/bundles/css")
+@Scripts.Render("~/bundles/js")
+
+@* Render the custom bundles *@
+@Scripts.Render("~/bundles/js/Login")
+
+@using (Html.BeginForm("login_Click", "Login", FormMethod.Post))
+{
+    <div class="container">
+
+        <!-- Outer Row -->
+        <div class="row justify-content-center">
+
+            <div class="col-xl-10 col-lg-12 col-md-9">
+
+                <div class="card o-hidden border-0 shadow-lg my-5">
+                    <div class="card-body p-0">
+                        <!-- Nested Row within Card Body -->
+                        <div class="row">
+                            <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+                            <div class="col-lg-6">
+                                <div class="p-5">
+                                    <div class="text-center">
+                                        <h1 class="h4 text-gray-900 mb-4">BIENVENIDOS!</h1>
+                                    </div>
+                                    <form class="user">
+                                        <div class="form-group">
+                                            @Html.TextBoxFor(a => a._User, htmlAttributes:
+                                                new { @class = "form-control form-control-user obligatorio", placeholder = "usuario@mail.com" })
+                                        </div>
+                                        <div class="form-group">
+                                            @Html.PasswordFor(a => a._Pass, htmlAttributes:
+                                                new { @class = "form-control form-control-user obligatorio", placeholder = "Contraseña" }
+                                                )
+                                        </div>
+                                        <input type="submit" class="btn btn-primary btn-user btn-block" value="Login" />
+                                    </form>
+                                    <hr>
+                                    @using (Html.BeginForm("RegistrarPersona", "Login", FormMethod.Post))
+                                    {
+
+                                        <span class="input-group-btn">
+                                            <a class="btn btn-info" data-toggle="modal" href="#myModal">Registrar</a>
+                                        </span>
+
+
+                                        <div id="myModal" class="modal fade">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">USUARIO NUEVO</h5>
+
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form class="user">
+                                                            <div class="form-group">
+                                                                @Html.TextBoxFor(a => a._User, htmlAttributes:
+                                                                    new { @class = "form-control form-control-user obligatorio", placeholder = "Ingrese Usuario" })
+                                                            </div>
+                                                            <div class="form-group">
+                                                                @Html.PasswordFor(a => a._Pass, htmlAttributes:
+                                                                    new { @class = "form-control form-control-user obligatorio", placeholder = "Contraseña" }
+                                                                    )
+                                                            </div>
+                                                            
+                                                            <h7>@ViewBag.Message</h7>
+
+                                                        </form>
+                                                    </div>
+
+
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-default" data-dismiss="modal" id="btnCancel">CERRAR</button>
+                                                        <div><input type="submit" class="btn btn-primary btn-user btn-block" value="REGISTRAR" /></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    }
+                                </div>
+                            </div>
+                            
+                           
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+}
+
